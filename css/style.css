@@ -104,21 +104,22 @@ body{
     font-family: Mosk;*/
 }
 .carousel-img {
-    height: 423px;
+    height: 60%;
     width: 100%;
 }
 .section-header {
     text-align: center;
     color: #FFD700;
     margin: 30px 0px;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     border-top: 1px solid #D3BB79;
 }
-.section-header > img {
-    position: absolute;
+.section-header > .decorative {
+    margin-top: -37px;
+    padding: 20px;
+}
+.section-header > .decorative > img {
     width: 150px;
-    top: -16px;
-    left: 45%;
     background-color: #2C313A;
     padding: 3px;
 }
