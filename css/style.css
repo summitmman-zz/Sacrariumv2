@@ -1,0 +1,431 @@
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora-Italic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: Abril;
+    src: url(../fonts/abril-fatface.regular.ttf);
+}
+@font-face {
+    font-family: NickBocker;
+    src: url(../fonts/NickerbockerNF.ttf);
+}
+@font-face {
+    font-family: Anna;
+    src: url(../fonts/anna.regular.ttf);
+}
+@font-face {
+    font-family: Quattrocento;
+    src: url(../fonts/quattrocento.regular.ttf);
+}
+@font-face {
+    font-family: Fjord;
+    src: url(../fonts/fjord.one.ttf);
+}
+@font-face {
+    font-family: Glober;
+    src: url('../fonts/Glober SemiBold Free.otf');
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Thin 100.ttf');
+    font-weight: 100;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Extra-Light 200.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Light 300.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Normal 400.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Medium 500.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Semi-Bold 600.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Bold 700.ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Extra-Bold 800.ttf');
+    font-weight: 800;
+}
+@font-face {
+    font-family: Mosk;
+    src: url('../fonts/Mosk Ultra-Bold 900.ttf');
+    font-weight: 900;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    /*background-color: #6B7A8F;*/
+    background-color: #2c313a;
+    /*font-family: Quattrocento;
+    font-family: Lora;
+    font-family: Abril;
+    font-family: NickBocker;
+    font-family: Anna;*/
+    font-family: Fjord;
+    /*font-family: Glober;
+    font-family: Mosk;*/
+}
+.carousel-img {
+    height: 423px;
+    width: 100%;
+}
+.section-header {
+    text-align: center;
+    color: #FFD700;
+    margin: 30px 0px;
+    padding-top: 20px;
+    border-top: 1px solid #D3BB79;
+}
+.section-header > img {
+    position: absolute;
+    width: 150px;
+    top: -16px;
+    left: 45%;
+    background-color: #2C313A;
+    padding: 3px;
+}
+.section-header-small {
+    text-align: center;
+    color: #FFD700;
+}
+.navbar-brand > img {
+    width: 100px;
+}
+.carousel-div {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #FFD700;
+}
+.section {
+    padding: 30px;
+}
+.text-center {
+    text-align: center;
+}
+
+
+.text-reflect {
+    position: relative;
+}
+.text-reflect:before, .text-reflect:after {
+    display: block;
+    position: absolute;
+    bottom: -.8em; /* You should change this value to fit your font */
+    left: 0;
+    right: 0;
+}
+.text-reflect:before {
+    content: attr(data-text);
+    opacity: .3;
+
+    /* This is how the text is flipped vertically */
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scateY(-1);
+}
+.text-reflect:after {
+    /* Fading using CSS gradient */
+    /* Don't forget to change the colors to your background color */
+    background: -webkit-gradient(linear, left top, left center, from(rgba(44,49,58,0)), to(rgb(44,49,58)));
+    background: -moz-linear-gradient(top, rgba(44,49,58,0), rgb(44,49,58));
+    background: linear-gradient(top, rgba(44,49,58,0), rgb(44,49,58));
+
+    /* I left out the `filter` property, because IE doesn't know `:before` and `:after` pseudo-elements anyway */
+    content: ' ';
+    height: 1em;
+}
+
+
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  background: url(../images/img11.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 100px 50px;
+}
+.content-space-two {
+  /*padding: 0px;*/
+  margin-bottom: 0px;
+  color: #fff;
+  background: url(../images/img21.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*padding: 100px 50px;*/
+  padding: 15px;
+  position: relative;
+  border: 8px double #FFD700;
+  border-radius: 15px;
+}
+.content-space-three {
+  /*padding: 0px;*/
+  margin-bottom: 0px;
+  color: #fff;
+  background: url(../images/img31.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*padding: 100px 50px;*/
+  padding: 15px;
+  position: relative;
+  border: 8px double #FFD700;
+  border-radius: 15px;
+}
+.text-block-section {
+    padding: 0px;
+}
+.text-block {
+    background-color: #fff;
+    color: #000;
+    padding: 80px;
+}
+.small-header::after {
+    border: 2px solid #F7C331;
+}
+#intro {
+    display: none;
+}
+#intro.content-space-one {
+    background: url(../images/img51.jpg) no-repeat center center fixed; 
+}
+#intro-wide {
+    display: inline-flex;
+}
+@media(max-width: 991px) {
+    #intro {
+        display: inline-flex;
+    }
+    #intro-wide {
+        display: none;
+    }
+}
+.blurify {
+    filter: blur(5px);
+    background: inherit;
+    width: 96%;
+    height: 93%;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+.space-content {
+    background: rgba(44, 49, 58,0.7);
+    border-radius: 15px;
+    padding: 50px;
+}
+
+
+/* Projects */
+.items-wrap {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.item-block {
+	position: relative;
+	-webkit-flex: 1 0 24%;
+	flex: 1 0 24%;
+	overflow: hidden;
+	height: 22vw;
+	outline: none;
+	border-width: 0 5px 10px;
+	background: #6B7A8F;
+    margin: 2px;
+    border: 6px double #FFD700;
+}
+.item__image {
+	position: absolute;
+	top: 50%;
+	min-height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+.item-block:hover .item__image {
+	opacity: 1;
+	-webkit-transform: translate3d(0, -50%, 0);
+	transform: translate3d(0, -50%, 0);
+}
+.item__title {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 1em;
+	color: #dbdbdb;
+	font-size: 1.85em;
+	font-family: "Playfair Display", Georgia, serif;
+	line-height: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+.item-block:hover .item__title {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+}
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+	.item-block {
+		-webkit-flex: 1 0 33.333%;
+		flex: 1 0 33.333%;
+		height: 30vw;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.item-block {
+		-webkit-flex: 1 0 50%;
+		flex: 1 0 50%;
+		height: 45vw;
+		font-size: 0.85em;
+	}
+}
+@media screen and (max-width: 590px) {
+	.item-block {
+		-webkit-flex: 1 0 100%;
+		flex: 1 0 100%;
+		height: 90vw;
+	}
+}
+
+
+
+/* Shutter Out Vertical */
+.hvr-shutter-out-vertical {
+  padding: 30px;
+  /*background-color: rgba(255,215,0,0.4);*/
+}
+.hvr-shutter-out-vertical > h3 {
+    text-align: center;
+}
+.hvr-shutter-out-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(44, 49, 58,0.2);
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+  color: white;
+}
+.hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/*Radial Out*/
+.hvr-radial-out {
+  overflow: hidden;
+}
+.hvr-radial-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 49, 58,0.2);
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
+  color: white;
+}
+.hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+hr.style17 {
+	border-top: 1px solid #8c8b8b;
+	text-align: center;
+}
+hr.style17:after {
+	content: '§';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+h2, h1 {
+    font-weight: 700;
+}
+.thin {
+    font-weight: 300;
+}
