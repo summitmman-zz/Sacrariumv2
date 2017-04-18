@@ -180,7 +180,7 @@ body{
   padding: 0px;
   margin-bottom: 0px;
   color: #fff;
-  background: url(../images/img11.jpg) no-repeat center center fixed; 
+  background: url('../images/06-NIGHT SHOT (1).jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -191,7 +191,7 @@ body{
   /*padding: 0px;*/
   margin-bottom: 0px;
   color: #fff;
-  background: url(../images/img21.jpg) no-repeat center center fixed; 
+  background: url(../images/img1.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -199,14 +199,14 @@ body{
   /*padding: 100px 50px;*/
   padding: 15px;
   position: relative;
-  border: 8px double #FFD700;
-  border-radius: 15px;
+  border: 2px solid #FFD700;
+  /*border-radius: 15px;*/
 }
 .content-space-three {
   /*padding: 0px;*/
   margin-bottom: 0px;
   color: #fff;
-  background: url(../images/img31.jpg) no-repeat center center fixed; 
+  background: url(../images/img101.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -214,8 +214,8 @@ body{
   /*padding: 100px 50px;*/
   padding: 15px;
   position: relative;
-  border: 8px double #FFD700;
-  border-radius: 15px;
+  border: 2px solid #FFD700;
+  /*border-radius: 15px;*/
 }
 .text-block-section {
     padding: 0px;
@@ -256,7 +256,7 @@ body{
 }
 .space-content {
     background: rgba(44, 49, 58,0.7);
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     padding: 50px;
 }
 
@@ -277,16 +277,17 @@ body{
 	height: 22vw;
 	outline: none;
 	border-width: 0 5px 10px;
-	background: #6B7A8F;
+	/*background: #2C313A;*/
+    background: #000;
     margin: 2px;
-    border: 6px double #FFD700;
+    border: 1px solid #FFD700;
 }
 .item__image {
 	position: absolute;
 	top: 50%;
 	min-height: 100%;
 	width: 100%;
-	opacity: 0.7;
+	opacity: 0.5;
 	-webkit-transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
 	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
@@ -304,10 +305,12 @@ body{
 	padding: 1em;
 	color: #dbdbdb;
 	font-size: 1.85em;
-	font-family: "Playfair Display", Georgia, serif;
+	/*font-family: "Playfair Display", Georgia, serif;*/
+    font-family: Fjord;
 	line-height: 1;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	transition: transform 0.3s, opacity 0.3s;
+    /*color: #FFD700;*/
 }
 .item-block:hover .item__title {
 	opacity: 0;
