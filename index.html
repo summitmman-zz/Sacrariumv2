@@ -15,7 +15,17 @@
     <script src='./js/bootstrap.min.js'></script>
     <script src="./js/script.js"></script>
 </head>
-<body id='page-top'>
+<body id='page-top' class='body-onload'>
+    <div id='page-loader' class="load-show loader">
+        <img src="./images/Logo1.png" class='mx-auto d-block' alt="">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+        <div class="progress-view"></div>
+    </div>
+    <span id='page-body' class="load-hide">
     <!--<ul class='scroll-nav'>
         <li><a href="#page-top" class="page-scroll menu-active"><span class="fa fa-circle-o"></span></a></li>
         <li><a href="#ideology" class="page-scroll"><span class="fa fa-circle-o"></span></a></li>
@@ -171,5 +181,6 @@
             </div>
         </section>
     </div>
+    </span>
 </body>
 </html>
