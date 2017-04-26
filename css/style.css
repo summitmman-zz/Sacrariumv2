@@ -615,6 +615,7 @@ h2, h1 {
 }
 .dropdown-menu.columns-3 {
 	min-width: 600px;
+    left: -255px;
 }
 .dropdown-menu li a {
 	padding: 5px 15px;
