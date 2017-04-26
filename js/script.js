@@ -32,7 +32,7 @@ $(window).on('scroll', function () {
     });
 
     if(window.innerWidth >= 991 && pagemenu.length > 0) {
-        if(window.scrollY > 107.2) {
+        if(window.scrollY > 236.4) {
             if(!pagemenu.hasClass('page-menu-sticky')) {
                 pagemenu.addClass('page-menu-sticky');
                 $('.container-fluid').addClass('container-fluid-sticky');
