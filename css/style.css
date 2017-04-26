@@ -832,7 +832,7 @@ footer p {
 }
 
 .project-menu-active {
-    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
 }
 .project-menu-active > a {
     color: #D4AF37 !important;
