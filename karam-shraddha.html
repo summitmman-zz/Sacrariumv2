@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="./css/tether.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src='./js/jquery-3.2.0.min.js'></script>
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/tether.min.js"></script>
     <script src='./js/bootstrap.min.js'></script>
+    <script src="./js/lightbox.min.js"></script>
     <script src="./js/script.js"></script>
 </head>
 <body id='page-top' class='body-onload'>
@@ -47,7 +49,7 @@
                     <!--<li class="nav-item">
                         <a class="nav-link" href="#">Why Us</a>
                     </li>-->
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Projects <b class="caret"></b></a>
                         <ul class="dropdown-menu multi-column columns-3 submenu">
                             <div class="row">
@@ -62,7 +64,7 @@
                                     <div class="list-header">Upcoming Projects</div>
                                     <ul class="multi-column-dropdown">
                                         <li><a href="./karam-roots.html">Karam Roots</a></li>
-                                        <li><a href="./karam-shraddha.html">Karam Shraddha</a></li>
+                                        <li class='project-menu-active'><a href="./karam-shraddha.html">Karam Shraddha</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-4">
@@ -86,92 +88,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Career</a>
                     </li>-->
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./contact-us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
-            </nav>
+        </nav>
+
     </header>
     <div class="container-fluid">
-        <div class="section">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="content-block">
-                        <h3 class="section-header-small">
-                            Corporate Address
-                            <img src="./images/underline1.png" alt="">
-                        </h3>
-                        <div class='contact-detail'>
-                            <h5 class='section-header-small'><span class="fa fa-home"></span> Address</h5>
-                            <p>
-                                Unit No. 9, Corporate Park II,<br/>
-                                VN Purav Marg, Near Swastik Chambers,<br/>
-                                Chembur (E), Mumbai, 400071
-                            </p>
-                        </div>
-                        <div class='contact-detail'>
-                            <h5 class='section-header-small'><span class="fa fa-mobile"></span> Mobile</h5>
-                            <p>7045295977</p>
-                        </div>
-                        <div class='contact-detail'>
-                            <h5 class='section-header-small'><span class="fa fa-phone"></span> Phone</h5>
-                            <p>022-32220206</p>
-                        </div>
-                        <div class='contact-detail'>
-                            <h5 class='section-header-small'><span class="fa fa-envelope"></span> Email</h5>
-                            <p>
-                                sacrarium@sacrariumbuilderanddevelopers.com<br/>
-                                sales@sacrariumbuilderanddevelopers.com<br/>
-                                care@sacrariumbuilderanddevelopers.com
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.2049264938114!2d72.88480511437646!3d19.054725557593695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8bb2cc9297d%3A0xca8274c1ac4a805c!2sCorporate+Park!5e0!3m2!1sen!2sin!4v1466134385450" width="100%" height="100%" frameborder="0" style="border:0; min-height:397px;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <div class="section row">
-                <div class="col-md-9 element-center">
-                    <div class="content-block" style='border: none;'>
-                        <h3 class="section-header-small">
-                            Quick Enquiry
-                            <img src="./images/underline1.png" alt="">
-                        </h3>
-                        <form>
-                            <div class="form-group">
-                                <label for="enquiree-name">Name</label>
-                                <input type="text" class="form-control" id="enquiree-name" placeholder="Enter your name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="enquiree-email">Email</label>
-                                <input type="email" class="form-control" id="enquiree-email" aria-describedby="emailHelp" placeholder="Enter your email" required>
-                                <small id="emailHelp" class="form-text text-muted">example: someone@gmail.com</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="enquiree-number">Phone</label>
-                                <input type="number" class="form-control" id="enquiree-number" placeholder="Enter your contact number">
-                            </div>
-                            <div class="form-group">
-                                <label for="project-select">Select a project of interest</label>
-                                <select class="form-control" id="project-select">
-                                    <option disabled selected>Pick a project of interest...</option>
-                                    <option>Kesari Heritage</option>
-                                    <option>Sohail Construction</option>
-                                    <option>N.M.Group</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="enquiree-comment">Example textarea</label>
-                                <textarea class="form-control" id="enquiree-comment" rows="5" placeholder="Enter comment text..."></textarea>
-                            </div>
-                            <div class="form-group"><button class="btn btn-warning form-control submit-btn" type="submit">Submit</button></div>
-                            
-                        </form>
-                    </div>
-                </div>
-            </div>
+        <div class="coming-soon">
+            <span class="fa fa-exclamation-circle"></span> This project will be updated soon
         </div>
     </div>
 
