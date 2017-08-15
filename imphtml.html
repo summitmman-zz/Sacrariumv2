@@ -93,9 +93,11 @@
     } else if (isOpera || isOperaMobile) {
       browserKey = 'OPR';
     }
+    document.body.innerHTML = 'key set' + isOperaMini;
 
     // Extract Major Version
     if (isIE === false && browserKey != '' && isOperaMini === false) {
+	    document.body.innerHTML = 'checking version' + isOperaMini;
       var start = userAgent.indexOf(browserKey);
       var end = userAgent.indexOf(' ', userAgent.indexOf(browserKey));
       var version = userAgent.substring(start, end === -1 ? userAgent.length : end);
@@ -103,6 +105,7 @@
       var majorEnd = version.indexOf('.', version.indexOf('/'));
       majorVersion = parseInt(version.substring(majorStart, majorEnd === -1 ? version.length : majorEnd));
     }
+				document.body.innerHTML = 'version check done' + isOperaMini;
     
     var output = 'Detecting browsers by ducktyping:<hr>';
     output += 'isFirefox: ' + isFirfox + '<br>';
