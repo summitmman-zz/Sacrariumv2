@@ -123,6 +123,8 @@
     output += 'major Version: ' + majorVersion + '<br><br>';
     output += 'userAgent: ' + userAgent + '<br><br>';
     output += 'appVersion: ' + navigator.appVersion + '<br>';
+    output += 'string.match' + userAgent.match(/Opera Mini/gi) + '<br>';
+    output += 'index' + userAgent.match(/Opera Mini/gi) + '<br>';
     document.body.innerHTML = output;
     
 
