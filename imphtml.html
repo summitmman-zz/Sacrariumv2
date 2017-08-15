@@ -57,6 +57,7 @@
         if (userAgent.match(/OPR/gi)) {
           isOperaMobile = true;
         } else if (userAgent.match(/Opera Mini/gi)) {
+	  document.body.innerHTML = 'is Opera Mini';
           isOperaMini = true;
         } else if (userAgent.match(/Firefox/gi)) {
           isFirefoxMobile = true;
