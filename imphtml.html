@@ -9,7 +9,7 @@
 			$(document).ready(function() {
         
 		var userAgent = navigator.userAgent;
-    document.body.innerHTML = userAgent.indexOf('Opera Mini');
+    document.body.innerHTML = userAgent.match(/Opera Mini/gi);
     var browserKey = '';
     var majorVersion = -1;
 
