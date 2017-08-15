@@ -109,7 +109,7 @@
     
     var output = 'Detecting browsers by ducktyping:<hr>';
     output += 'isFirefox: ' + isFirfox + '<br>';
-    output += 'index' + userAgent.match(/Opera Mini/gi) + '<br>';
+    output += 'index' + userAgent.indexOf('Opera Mini') + '<br>';
     output += 'string.match' + userAgent.match(/Opera Mini/gi) + navigator.userAgent.match(/Opera Mini/gi) + '<br>';
     output += 'isChrome: ' + isChrome + '<br>';
     output += 'isSafari: ' + isSafari + '<br>';
