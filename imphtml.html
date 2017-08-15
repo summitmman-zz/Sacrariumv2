@@ -94,7 +94,7 @@
     }
 
     // Extract Major Version
-    if (isIE === false && browserKey != '') {
+    if (isIE === false && browserKey != '' && isOperaMini === false) {
       var start = userAgent.indexOf(browserKey);
       var end = userAgent.indexOf(' ', userAgent.indexOf(browserKey));
       var version = userAgent.substring(start, end === -1 ? userAgent.length : end);
