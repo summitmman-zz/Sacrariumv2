@@ -9,7 +9,6 @@
 			$(document).ready(function() {
         
 		var userAgent = navigator.userAgent;
-    document.body.innerHTML = userAgent.match(/Opera Mini/gi);
     var browserKey = '';
     var majorVersion = -1;
 
@@ -106,8 +105,6 @@
     
     var output = 'Detecting browsers by ducktyping:<hr>';
     output += 'isFirefox: ' + isFirfox + '<br>';
-    output += 'index' + userAgent.indexOf('Opera Mini') + '<br>';
-    output += 'string.match' + userAgent.match(/Opera Mini/gi) + navigator.userAgent.match(/Opera Mini/gi) + '<br>';
     output += 'isChrome: ' + isChrome + '<br>';
     output += 'isSafari: ' + isSafari + '<br>';
     output += 'isOpera: ' + isOpera + '<br>';
@@ -119,6 +116,7 @@
     output += 'isFirefoxMobile: ' + isFirefoxMobile + '<br>';
     output += 'isOperaMobile: ' + isOperaMobile + '<br>';
     output += 'isEdgeMobile: ' + isEdgeMobile + '<br>';
+    output += 'isOperaMini: ' + isOperaMini + '<br>';
     output += 'major Version: ' + majorVersion + '<br><br>';
     output += 'userAgent: ' + userAgent + '<br><br>';
     output += 'appVersion: ' + navigator.appVersion + '<br>';
