@@ -9,7 +9,7 @@
 			$(document).ready(function() {
         
 		var userAgent = navigator.userAgent;
-    document.body.innerHTML = userAgent;
+    document.body.innerHTML = userAgent.indexOf('Opera Mini');
     var browserKey = '';
     var majorVersion = -1;
 
@@ -17,7 +17,6 @@
     var isOpera = isFirefox = isSafari = isIE = isEdge = isChrome = false;
     //... Mobile browser flags.
     var isOperaMini = isSafariIOS = isChromeMobile = isChromeIOS = isFirefoxMobile = isOperaMobile = isEdgeMobile = false;
-    document.body.innerHTML = userAgent;
 
     //... Get iOS version.
     function getIOSversion() {
@@ -56,7 +55,6 @@
         }
       }
       else {
-        document.body.innerHTML = 'mobile device';
         //... Check for other web browsers
         if (userAgent.match(/OPR/gi)) {
           isOperaMobile = true;
